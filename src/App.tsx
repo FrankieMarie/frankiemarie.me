@@ -1,9 +1,18 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from './components';
 
 const App = () => {
-
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
@@ -11,7 +20,7 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About />
+        {/* <About />
         <Experience />
         <Tech />
         <Works />
@@ -19,10 +28,10 @@ const App = () => {
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
-        </div>
+        </div> */}
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
