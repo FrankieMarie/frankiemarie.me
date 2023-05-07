@@ -1,24 +1,30 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
 import {
   Decal,
   Float,
   OrbitControls,
   Preload,
   useTexture,
-} from "@react-three/drei";
-
-import CanvasLoader from "../Loader";
+} from '@react-three/drei';
+import CanvasLoader from '../Loader';
+import { defaultFloatProps } from '../../constants';
 
 interface Props {
   imgUrl: string;
 }
 
 const Ball = (props: Props) => {
-  const [decal] = useTexture([props.imgUrl]);
+  const { imgUrl } = props;
+  const [decal] = useTexture([imgUrl]);
 
   return (
-    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+    <Float
+      {...defaultFloatProps}
+      speed={1.75}
+      rotationIntensity={1}
+      floatIntensity={2}
+    >
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
@@ -41,7 +47,12 @@ const Ball = (props: Props) => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+interface BallCanvasProps {
+  icon: string;
+}
+
+const BallCanvas = (props: BallCanvasProps) => {
+  const { icon } = props;
   return (
     <Canvas
       frameloop='demand'
