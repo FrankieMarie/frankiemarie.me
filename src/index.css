@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -33,36 +35,28 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(
-    -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
-  );
-}
-
-.green-pink-gradient {
+.pink-orange-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #b85eec 1.9%, #FA5F55 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #b85eec 1.9%, #FA5F55 97.5%);
 }
 
-.orange-text-gradient {
-  background: #f12711; /* fallback for old browsers */
+.pink-orange-text-gradient {
+  background: #b85eec; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to top,
-    #f12711,
-    #f5af19
+    #b85eec 25%,
+    #FA5F55
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to top,
-    #f12711,
-    #f5af19
+    #b85eec 25%,
+    #FA5F55
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.border-gradient-primary {
+  border-image-source: linear-gradient(to left, #b85eec, #FA5F55);
 }
 
 .green-text-gradient {

@@ -5,12 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#050816',
-        secondary: '#aaa6c3',
-        tertiary: '#151030',
-        'black-100': '#100d25',
-        'black-200': '#090325',
-        'white-100': '#f3f3f3',
+        primary: '#b85eec',
+        secondary: '#FA5F55',
+        dark: '#434343',
+        background: '#121212',
       },
       boxShadow: {
         card: '0px 35px 120px -15px #211e35',
@@ -19,7 +17,12 @@ module.exports = {
         xs: '450px',
       },
       backgroundImage: {
-        'hero-pattern': "url('/src/assets/herobg.png')",
+        'hero-pattern': "url('/src/assets/images/herobg.png')",
+      },
+      fontFamily: {
+        calligraffiti: ['Calligraffitti', 'cursive'],
+        poppins: ['Poppins', 'sans-serif'],
+        sourceCode: ['Source Code Pro', 'monospace'],
       },
     },
   },

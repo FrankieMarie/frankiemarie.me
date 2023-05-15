@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { styles } from '../styles';
 import { navLinks } from '../constants';
-import logo from '../assets/logo.svg';
-import menu from '../assets/menu.svg';
-import close from '../assets/close.svg';
+import { close, menu } from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -28,18 +25,21 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } fixed top-0 z-20 flex w-full items-center py-5 ${
-        scrolled ? 'bg-primary' : 'bg-transparent'
+      className={`fixed top-0 z-20 flex w-full items-center  transition-all sm:px-16 ${
+        scrolled ? 'bg-background px-6 py-2' : 'bg-transparent px-6 py-5'
       }`}
     >
       <div className='mx-auto flex w-full max-w-7xl items-center justify-between'>
-        <Link to='/' className='flex items-center gap-2'>
-          <img src={logo} alt='logo' className='h-9 w-9 object-contain' />
-          <p className='flex cursor-pointer text-[18px] font-bold text-white'>
-            Frankie Marie &nbsp;
-            <span className='hidden sm:block'> | Web Development</span>
+        <Link to='/'>
+          <p className='flex cursor-pointer items-baseline text-[20px] font-normal text-white'>
+            <span
+              className={`font-sourceCode font-semibold transition-all ${
+                scrolled ? 'pink-orange-text-gradient' : 'text-white'
+              }`}
+            >
+              FM &nbsp;
+            </span>
+            <span className='hidden font-sourceCode sm:block'>| Web Dev</span>
           </p>
         </Link>
 
@@ -47,12 +47,12 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.title ? 'text-white' : 'text-secondary'
-              } cursor-pointer text-[18px] font-medium hover:text-white`}
+              className={`cursor-pointer text-[16px] font-medium text-white hover:text-white`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a className='font-sourceCode' href={`#${nav.id}`}>
+                {nav.title}
+              </a>
             </li>
           ))}
         </ul>
@@ -74,9 +74,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins cursor-pointer text-[16px] font-medium ${
-                    active === nav.title ? 'text-white' : 'text-secondary'
-                  }`}
+                  className='cursor-pointer font-poppins text-[16px] font-medium '
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
