@@ -4,19 +4,11 @@ import {
   ComputersCanvas,
   StarsCanvas,
 } from './canvas';
-import Navbar from './Navbar';
-import About from './About';
 import Tech from './Tech';
-import Experience from './Experience';
-import Contact from './Contact';
 import CanvasLoader from './Loader';
 
 export {
-  Navbar,
-  About,
   Tech,
-  Experience,
-  Contact,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,
@@ -24,4 +16,7 @@ export {
   StarsCanvas,
 };
 
+export { Navbar } from './Navigation/Navbar';
 export { Hero } from './Hero';
+export { About } from './About';
+export { Contact } from './Contact/Contact';
