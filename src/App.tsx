@@ -5,16 +5,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0'>
-        <div className=''>
-          <Navbar />
-          <Hero />
+        <Navbar />
+        <Hero />
+        <div className='relative min-h-screen'>
+          <About />
+          <Tech />
+          <StarsCanvas />
         </div>
-        <About />
-        <Tech />
-        <div className='relative z-0'>
-          <Contact />
-        </div>
-        <StarsCanvas />
       </div>
     </BrowserRouter>
   );

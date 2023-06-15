@@ -1,21 +1,8 @@
-import {
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
-  StarsCanvas,
-} from './canvas';
+import { BallCanvas, StarsCanvas } from './canvas';
 import Tech from './Tech';
 import CanvasLoader from './Loader';
 
-export {
-  Tech,
-  CanvasLoader,
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
-  StarsCanvas,
-};
-
+export { Tech, CanvasLoader, BallCanvas, StarsCanvas };
 export { Navbar } from './Navigation/Navbar';
 export { Hero } from './Hero';
 export { About } from './About';

@@ -1,17 +1,16 @@
 import { useEffect, useState } from 'react';
 import { Logo } from './Logo';
 import { Menu } from './Menu';
-import { MobileMenu } from './MobileMenu';
+import { github, linkedin } from '../../assets';
 
 export const Navbar = () => {
   const [active, setActive] = useState('');
-  const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      const scrollY = window.scrollY;
+      if (scrollY > 100) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -31,13 +30,20 @@ export const Navbar = () => {
     >
       <div className='mx-auto flex w-full max-w-[2000px] items-center justify-between'>
         <Logo />
-        <Menu active={active} setActive={setActive} />
-        <MobileMenu
-          active={active}
-          setActive={setActive}
-          toggle={toggle}
-          setToggle={setToggle}
-        />
+        <section className='flex gap-4'>
+          <Menu active={active} setActive={setActive} />
+          <div className='flex gap-4'>
+            <a href='https://github.com/FrankieMarie' target='_blank'>
+              <img className='w-5' src={github} />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/frankiedenell/'
+              target='_blank'
+            >
+              <img className='w-5' src={linkedin} />
+            </a>
+          </div>
+        </section>
       </div>
     </nav>
   );

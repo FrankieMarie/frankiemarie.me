@@ -1,5 +1,4 @@
 import css from './css.png';
-import docker from './docker.png';
 import figma from './figma.png';
 import git from './git.png';
 import html from './html.png';
@@ -14,7 +13,6 @@ import threejs from './threejs.svg';
 
 export {
   css,
-  docker,
   figma,
   git,
   html,

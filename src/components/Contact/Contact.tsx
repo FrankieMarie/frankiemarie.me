@@ -76,7 +76,7 @@ export const Contact = SectionWrapper(() => {
         variants={slideIn('left', 'tween', 0.2, 1)}
         className='bg-black-100 flex-[0.75] rounded-2xl p-8'
       >
-        <p className='pink-orange-text-gradient text-[14px] uppercase tracking-wider sm:text-[18px]'>
+        <p className='orange-text-gradient text-[14px] uppercase tracking-wider sm:text-[18px]'>
           Get in touch
         </p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>

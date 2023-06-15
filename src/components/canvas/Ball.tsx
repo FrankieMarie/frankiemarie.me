@@ -8,23 +8,16 @@ import {
   useTexture,
 } from '@react-three/drei';
 import CanvasLoader from '../Loader';
-import { defaultFloatProps } from '../../constants';
 
 interface Props {
   imgUrl: string;
 }
 
-const Ball = (props: Props) => {
-  const { imgUrl } = props;
+const Ball = ({ imgUrl }: Props) => {
   const [decal] = useTexture([imgUrl]);
 
   return (
-    <Float
-      {...defaultFloatProps}
-      speed={1.75}
-      rotationIntensity={1}
-      floatIntensity={2}
-    >
+    <Float speed={2} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
@@ -54,11 +47,7 @@ interface BallCanvasProps {
 const BallCanvas = (props: BallCanvasProps) => {
   const { icon } = props;
   return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-    >
+    <Canvas dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
