@@ -6,7 +6,7 @@ export const About = SectionWrapper(() => {
   return (
     <section>
       <motion.div variants={textVariant()}>
-        <p className='orange-text-gradient text-[14px] uppercase tracking-wider sm:text-[18px]'>
+        <p className='pink-orange-text-gradient text-[14px] uppercase tracking-wider sm:text-[18px]'>
           Introduction
         </p>
         <h2 className='text-[30px] font-black text-white xs:text-[40px] sm:text-[50px] md:text-[60px]'>
@@ -20,8 +20,8 @@ export const About = SectionWrapper(() => {
       >
         I'm an experienced software developer with expertise in TypeScript and
         JavaScript, and frameworks such as React, Node.js, and Three.js. I'm a
-        quick and perpetual learner, and collaborate closely with clients and
-        co-workers to create efficient, scalable, and user-friendly solutions.
+        quick and perpetual learner, and create efficient, scalable, and
+        user-friendly solutions.
       </motion.p>
       <motion.p
         variants={fadeIn('up', '', 0.1, 1)}

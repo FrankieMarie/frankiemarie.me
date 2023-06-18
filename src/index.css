@@ -35,8 +35,24 @@
   -webkit-text-fill-color: transparent;
 }
 
-.border-gradient-primary {
-  border-image-source: linear-gradient(to left, #ff0000, #ffff00);
+.pink-orange-gradient {
+  background: "#b85eec";
+  background: linear-gradient(90.13deg, rgb(162, 0, 255) 1.9%, #ffd900 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #a200ff 1.9%, #ffd900 97.5%);
+}
+
+.pink-orange-text-gradient {
+  background: #a200ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    #a200ff 15%,
+    #ffd900
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    #a200ff 15%,
+    #ffd900
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* canvas- styles */
