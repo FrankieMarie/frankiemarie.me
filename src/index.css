@@ -15,26 +15,6 @@
   color-scheme: dark;
 }
 
-.orange-gradient {
-  background: "#b85eec";
-  background: linear-gradient(90.13deg, #ff0000 1.9%, #ffff00 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #ff0000 1.9%, #ffff00 97.5%);
-}
-
-.orange-text-gradient {
-  background: #ff0000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    #ff0000 25%,
-    #ffff00
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    #ff0000 25%,
-    #ffff00
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .pink-orange-gradient {
   background: "#b85eec";
   background: linear-gradient(90.13deg, rgb(162, 0, 255) 1.9%, #ffd900 97.5%);

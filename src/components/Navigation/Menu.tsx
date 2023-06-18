@@ -15,7 +15,7 @@ export const Menu = ({ setActive }: Props) => {
           onClick={() => setActive(nav.title)}
         >
           <a
-            className='relative font-sourceCode before:absolute before:bottom-[-4px] before:left-0 before:block before:h-[3px] before:w-full before:origin-top-left before:scale-x-0 before:bg-red before:transition before:duration-300 before:ease-in-out before:content-[""] before:hover:scale-x-100'
+            className='relative font-sourceCode before:absolute before:bottom-[-4px] before:left-0 before:block before:h-[3px] before:w-full before:origin-top-left before:scale-x-0 before:bg-primary before:transition before:duration-300 before:ease-in-out before:content-[""] before:hover:scale-x-100'
             href={`#${nav.id}`}
           >
             {nav.title}
