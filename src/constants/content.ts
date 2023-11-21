@@ -1,4 +1,4 @@
-import { typescript, reactjs, tailwind, git, threejs } from '../assets';
+import { typescript, reactjs, tailwind, git, threejs, vite } from '../assets';
 
 export const navLinks = [
   {
@@ -15,6 +15,10 @@ export const technologies = [
   {
     name: 'React JS',
     icon: reactjs,
+  },
+  {
+    name: 'vite',
+    icon: vite,
   },
   {
     name: 'Tailwind CSS',

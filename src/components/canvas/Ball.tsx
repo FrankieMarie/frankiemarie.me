@@ -42,7 +42,11 @@ interface BallCanvasProps {
 const BallCanvas = (props: BallCanvasProps) => {
   const { icon } = props;
   return (
-    <Canvas dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
+    <Canvas
+      onTouchEnd={() => console.log('here')}
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true }}
+    >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />

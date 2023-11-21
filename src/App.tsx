@@ -1,17 +1,18 @@
 import { BrowserRouter } from 'react-router-dom';
-import { About, Hero, Navbar, Tech, StarsCanvas } from './components';
+import { About, Hero, Tech, StarsCanvas } from './components';
+import { Footer } from './components/Footer';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0'>
-        <Navbar />
+      <div className='relative'>
         <Hero />
-        <div className='relative min-h-screen'>
+        <div className='mx-auto max-w-screen-content bg-background bg-opacity-50'>
           <About />
           <Tech />
-          <StarsCanvas />
         </div>
+        <Footer />
+        <StarsCanvas />
       </div>
     </BrowserRouter>
   );

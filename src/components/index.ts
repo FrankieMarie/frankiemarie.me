@@ -1,9 +1,8 @@
 import { BallCanvas, StarsCanvas } from './canvas';
 import Tech from './Tech';
+import { Hero } from './Hero';
 import CanvasLoader from './Loader';
 
-export { Tech, CanvasLoader, BallCanvas, StarsCanvas };
+export { Tech, Hero, CanvasLoader, BallCanvas, StarsCanvas };
 export { Navbar } from './Navigation/Navbar';
-export { Hero } from './Hero';
 export { About } from './About';
-export { Contact } from './Contact/Contact';

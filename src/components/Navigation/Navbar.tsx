@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react';
+import { github, linkedin } from 'src/assets';
 import { Logo } from './Logo';
-import { Menu } from './Menu';
-import { github, linkedin } from '../../assets';
 
 export const Navbar = () => {
-  const [active, setActive] = useState('');
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,14 +22,15 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-20 flex w-full items-center  transition-all sm:px-16 ${
-        scrolled ? 'bg-background px-6 py-2' : 'bg-transparent px-6 py-5'
+      className={`z-20 mx-auto flex w-full max-w-screen-content items-center transition-all sm:px-16 ${
+        scrolled
+          ? 'bg-background px-6 py-2 shadow-md'
+          : 'bg-transparent px-6 py-5'
       }`}
     >
-      <div className='mx-auto flex w-full max-w-[2000px] items-center justify-between'>
+      <div className='flex w-full max-w-screen-content items-center justify-between'>
         <Logo />
         <section className='flex gap-4'>
-          <Menu active={active} setActive={setActive} />
           <div className='flex gap-4'>
             <a href='https://github.com/FrankieMarie' target='_blank'>
               <img className='w-5' src={github} />

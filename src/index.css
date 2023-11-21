@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,19 +21,19 @@
 
 .pink-orange-gradient {
   background: "#b85eec";
-  background: linear-gradient(90.13deg, rgb(162, 0, 255) 1.9%, #ffd900 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #a200ff 1.9%, #ffd900 97.5%);
+  background: linear-gradient(90.13deg, #ffa7bf 1.9%, #e75a79 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #ffa7bf 1.9%, #e75a79 97.5%);
 }
 
 .pink-orange-text-gradient {
-  background: #a200ff; /* fallback for old browsers */
+  background: #ffa7bf; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    #a200ff 15%,
-    #ffd900
+    #ffa7bf 15%,
+    #e75a79
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    #a200ff 15%,
-    #ffd900
+    #ffa7bf 15%,
+    #e75a79
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

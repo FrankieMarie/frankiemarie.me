@@ -44,7 +44,7 @@ const Stars = () => {
 
 const StarsCanvas = () => {
   return (
-    <div className='absolute inset-0 z-[-1] w-full'>
+    <div className='absolute inset-0 -z-20 w-full bg-background'>
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />

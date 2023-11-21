@@ -5,22 +5,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#a200ff',
+        primary: '#ffa7bf',
+        secondary: '#e75a79',
         mediumGrey: '#97938B',
         dark: '#434343',
-        background: '#121212',
+        background: '#010509',
       },
       boxShadow: {
-        card: '0px 35px 120px -15px #211e35',
+        hero: 'inset 75px 0px 75px -50px #010509, inset -75px 0px 75px -50px #010509',
       },
       screens: {
+        content: '1920px',
         xs: '450px',
       },
-      backgroundImage: {
-        'hero-pattern': "url('/src/assets/images/herobg.png')",
-      },
       fontFamily: {
-        calligraffiti: ['Calligraffitti', 'cursive'],
         poppins: ['Poppins', 'sans-serif'],
         sourceCode: ['Source Code Pro', 'monospace'],
       },
