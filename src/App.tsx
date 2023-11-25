@@ -1,21 +1,15 @@
-import { BrowserRouter } from 'react-router-dom';
-import { About, Hero, Tech, StarsCanvas } from './components';
-import { Footer } from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Landing } from './components';
+import Library from './components/Library';
+import { PATHS } from './routes';
 
-const App = () => {
+export const App = () => {
   return (
-    <BrowserRouter>
-      <div className='relative'>
-        <Hero />
-        <div className='mx-auto max-w-screen-content bg-background bg-opacity-50'>
-          <About />
-          <Tech />
-        </div>
-        <Footer />
-        <StarsCanvas />
-      </div>
+    <BrowserRouter basename='/'>
+      <Routes>
+        <Route path={PATHS.default} element={<Landing />} />
+        <Route path={PATHS.library} element={<Library />} />
+      </Routes>
     </BrowserRouter>
   );
 };
-
-export default App;

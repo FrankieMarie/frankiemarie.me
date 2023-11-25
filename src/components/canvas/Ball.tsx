@@ -43,7 +43,7 @@ const BallCanvas = (props: BallCanvasProps) => {
   const { icon } = props;
   return (
     <Canvas
-      onTouchEnd={() => console.log('here')}
+      onTouchEnd={(e) => console.log('here', e)}
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
