@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Landing } from './components';
-import Library from './components/Library';
+import { Landing } from './pages/Landing';
+import { Library } from './pages/Library';
 import { PATHS } from './routes';
 
 export const App = () => {
