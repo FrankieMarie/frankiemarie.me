@@ -1,5 +1,5 @@
-import { AnimatePresence, motion } from 'framer-motion';
-import { ReactNode } from 'react';
+import { AnimatePresence, motion } from "framer-motion";
+import { ReactNode } from "react";
 
 interface Props {
   showModal: boolean;
@@ -14,11 +14,11 @@ const backdropVariants = {
 
 const modalVariants = {
   hidden: {
-    y: '-100vh',
+    y: "-100vh",
     opacity: 0,
   },
   visible: {
-    y: '200px',
+    y: 1,
     opacity: 1,
     transition: { delay: 0.25 },
   },
@@ -31,15 +31,15 @@ export const Modal = (props: Props) => {
     <AnimatePresence>
       {showModal && (
         <motion.div
-          className='fixed left-0 top-0 z-50 h-full w-full bg-[#000000e1]'
+          className="fixed left-0 top-0 z-40 h-full w-full bg-[#000000e1]"
           variants={backdropVariants}
-          initial='hidden'
-          animate='visible'
-          exit='hidden'
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
           onClick={onClose}
         >
           <motion.div
-            className='mx-auto max-w-[75vw] bg-black p-4'
+            className="flex h-screen w-screen items-center bg-black md:mx-auto md:max-w-[75vw] md:p-4"
             variants={modalVariants}
           >
             {children}
