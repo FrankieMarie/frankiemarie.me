@@ -21,10 +21,10 @@ export const About = SectionWrapper(() => {
         variants={fadeIn("up", "", 0.1, 1)}
         className="mt-4 max-w-3xl font-sourceCode text-base leading-[28px] text-white"
       >
-        I'm a software developer with experience in TypeScript and JavaScript,
-        and frameworks such as React, Node.js, and Three.js. I'm a quick and
-        perpetual learner, creating efficient, scalable, and user-friendly
-        solutions.
+        I'm a full-stack software developer with experience in
+        TypeScript/JavaScript, and frameworks such as React, Node.js, and
+        Three.js. I'm a quick and perpetual learner, creating efficient,
+        scalable, and user-friendly solutions.
       </motion.p>
     </div>
   );
