@@ -2,10 +2,10 @@ import { H1 } from "src/components/H1";
 
 export const Overview = () => {
   return (
-    <section className="mx-8 max-w-screen-content">
+    <section className="mx-auto max-w-screen-content px-8">
       <H1 text="OVERVIEW" subText="a bit about me." />
-      <p className="mx-auto mt-4 max-w-2xl">
-        I am female in my 30's from the Upper Peninsula of Michigan. I am a
+      <p className="mx-auto mt-4 max-w-5xl">
+        I am a female in my 30's from the Upper Peninsula of Michigan. I am a
         front end focused developer with a full stack skillset. I began teaching
         myself HTML, CSS, and JS right out of high school. In my early twenties,
         I took a software engineering bootcamp in Phoenix, AZ, and landed my
@@ -14,7 +14,7 @@ export const Overview = () => {
         break), and cyber security.
       </p>
 
-      <p className="mx-auto mt-4 max-w-2xl">
+      <p className="mx-auto mt-4 max-w-5xl">
         Outside of tech, I also enjoy the outdoor activities that the UP has to
         offer, such as kayaking, fishing, and exploring trails on my ATV. I also
         mess around with Photoshop, drawing, spray paint art, sculpting, and

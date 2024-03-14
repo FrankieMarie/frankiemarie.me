@@ -22,10 +22,10 @@ html {
 }
 
 .text-gradient {
-  background: #ff6b6b; 
+  background: rgb(255, 107, 107); 
   background: -webkit-linear-gradient(
     #ff6b6b,
-    #ffd3d3
+    rgb(255, 211, 211)
   ); 
   background: linear-gradient(
     #ff6b6b,

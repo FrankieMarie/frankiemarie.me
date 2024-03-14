@@ -3,4 +3,5 @@ export const PATHS = {
   about: "#about",
   projects: "#projects",
   library: "/library",
+  comingSoon: "/coming-soon",
 };

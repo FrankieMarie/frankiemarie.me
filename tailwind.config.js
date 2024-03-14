@@ -10,6 +10,7 @@ module.exports = {
         secondary: '#ff9999',
         tertiary: '#ffd3d3',
         background: '#111111',
+        darkGrey: '#39494f'
       },
       screens: {
         content: '1920px',

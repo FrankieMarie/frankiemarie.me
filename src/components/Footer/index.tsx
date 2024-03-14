@@ -4,7 +4,7 @@ import { PATHS } from "src/routes";
 
 export const Footer = () => {
   return (
-    <section className="mx-8 mb-8 grid grid-cols-2 items-center py-8 md:grid-cols-3">
+    <section className="mx-8 mt-16 grid grid-cols-2 items-center py-8 md:grid-cols-3">
       <div className="hidden md:block" />
       <div className="text-left text-xs font-bold text-secondary sm:text-sm md:text-center">
         <span>&copy; frankiemarie.me | twentytwentyfour</span>
