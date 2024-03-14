@@ -1,6 +1,6 @@
 export const PATHS = {
-  default: '/',
-  about: '#about',
-  library: '/library',
-  entangled: '/entangled',
+  default: "/",
+  about: "#about",
+  projects: "#projects",
+  library: "/library",
 };
