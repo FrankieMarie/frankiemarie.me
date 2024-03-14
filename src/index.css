@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Dank;
+  src: url("../assets/fonts/DankMono-Regular.woff2");
+}
 
 html {
   height: 100%;
@@ -14,27 +17,20 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
 
-.pink-orange-gradient {
-  background: "#b85eec";
-  background: linear-gradient(90.13deg, #ffa7bf 1.9%, #e75a79 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #ffa7bf 1.9%, #e75a79 97.5%);
-}
-
-.pink-orange-text-gradient {
-  background: #ffa7bf; /* fallback for old browsers */
+.text-gradient {
+  background: #ff6b6b; 
   background: -webkit-linear-gradient(
-    #ffa7bf 15%,
-    #e75a79
-  ); /* Chrome 10-25, Safari 5.1-6 */
+    #ff6b6b,
+    #ffd3d3
+  ); 
   background: linear-gradient(
-    #ffa7bf 15%,
-    #e75a79
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #ff6b6b,
+    #ffd3d3
+  ); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

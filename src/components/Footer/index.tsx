@@ -4,9 +4,9 @@ import { PATHS } from "src/routes";
 
 export const Footer = () => {
   return (
-    <section className="absolute bottom-0 grid w-full grid-cols-2 items-center bg-secondary bg-opacity-80 p-3 font-semibold md:grid-cols-3">
+    <section className="mx-8 mb-8 grid grid-cols-2 items-center py-8 md:grid-cols-3">
       <div className="hidden md:block" />
-      <div className="text-left text-xs text-background sm:text-sm md:text-center">
+      <div className="text-left text-xs font-bold text-primary sm:text-sm md:text-center">
         <span>&copy; frankiemarie.me | 2023</span>
       </div>
       <nav className="flex justify-end">

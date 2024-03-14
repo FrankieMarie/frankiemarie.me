@@ -30,7 +30,7 @@ export const Library = () => {
     ));
 
   return (
-    <div>
+    <div className="bg-background">
       <Navbar />
       <div className="mx-auto grid max-w-screen-content grid-cols-1 gap-8 px-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {images("h-[400px] w-full")}

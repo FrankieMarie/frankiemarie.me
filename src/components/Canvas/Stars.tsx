@@ -1,13 +1,13 @@
-import { useState, useRef, Suspense } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Points, PointMaterial, Preload } from '@react-three/drei';
-import { random } from 'maath';
+import { useState, useRef, Suspense } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Points, PointMaterial, Preload } from "@react-three/drei";
+import { random } from "maath";
 import {
   Points as IPoints,
   BufferGeometry,
   NormalBufferAttributes,
   Material,
-} from 'three';
+} from "three";
 
 const Stars = () => {
   const ref = useRef<IPoints<
@@ -32,7 +32,7 @@ const Stars = () => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled>
         <PointMaterial
           transparent
-          color='#f272c8'
+          color="#f272c8"
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
@@ -44,7 +44,7 @@ const Stars = () => {
 
 const StarsCanvas = () => {
   return (
-    <div className='absolute inset-0 -z-20 w-full bg-background'>
+    <div className="absolute inset-0 -z-20 w-full bg-background">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />

@@ -1,18 +1,15 @@
-import { Footer } from '../../components/Footer';
-import { StarsCanvas } from '../../components/Canvas';
-import { About } from './About';
-import { Hero } from './Hero';
-import Tech from './Tech';
+import { Footer } from "../../components/Footer";
+import { StarsCanvas } from "../../components/Canvas";
+import { Hero } from "./Hero";
+import { Navbar } from "src/components";
 
 export const Landing = () => {
   return (
-    <div className='relative'>
-      <Hero />
-      <div className='mx-auto max-w-screen-content bg-background bg-opacity-50'>
-        <About />
-        <Tech />
+    <div className="font-dank">
+      <div className="relative flex h-screen flex-auto flex-col">
+        <Hero />
+        <StarsCanvas />
       </div>
-      <StarsCanvas />
       <Footer />
     </div>
   );

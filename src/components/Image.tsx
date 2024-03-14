@@ -8,9 +8,9 @@ interface Props {
 export const Image = ({ webp, fallback, alt, className }: Props) => {
   return (
     <picture className={className}>
-      <source srcSet={webp} type='image/webp' />
-      <source srcSet={fallback} type='image/jpeg' />
-      <img className='h-full w-full object-cover' src={fallback} alt={alt} />
+      <source srcSet={webp} type="image/webp" />
+      <source srcSet={fallback} type="image/jpeg" />
+      <img className="h-full w-full object-cover" src={fallback} alt={alt} />
     </picture>
   );
 };

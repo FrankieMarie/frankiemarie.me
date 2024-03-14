@@ -1,4 +1,3 @@
-import BallCanvas from './Ball';
-import StarsCanvas from './Stars';
+import StarsCanvas from "./Stars";
 
-export { BallCanvas, StarsCanvas };
+export { StarsCanvas };
