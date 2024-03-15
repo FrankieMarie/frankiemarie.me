@@ -17,7 +17,7 @@ export const ProjectCard = ({ title, text, url, tags }: Props) => {
         <p className="mb-16 text-center">{text}</p>
         <div className="absolute bottom-4 left-4 flex w-[calc(100%-2rem)] flex-wrap justify-center gap-2">
           {tags.map((tag) => (
-            <Tag text={tag} />
+            <Tag key={`${title}-${tag}`} text={tag} />
           ))}
         </div>
       </a>

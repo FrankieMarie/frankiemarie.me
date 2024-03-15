@@ -1,9 +1,9 @@
-import { H1 } from "src/components/H1";
+import { SectionHeading } from "src/components/SectionHeading";
 
 export const Overview = () => {
   return (
-    <section className="mx-auto max-w-screen-content px-8">
-      <H1 text="OVERVIEW" subText="a bit about me." />
+    <section id="overview" className="mx-auto mt-16 max-w-screen-content px-8">
+      <SectionHeading text="OVERVIEW" subText="a bit about me." />
       <p className="mx-auto mt-4 max-w-5xl">
         I am a female in my 30's from the Upper Peninsula of Michigan. I am a
         front end focused developer with a full stack skillset. I began teaching

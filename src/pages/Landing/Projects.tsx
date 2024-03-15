@@ -1,11 +1,11 @@
-import { H1 } from "src/components/H1";
+import { SectionHeading } from "src/components/SectionHeading";
 import { ProjectCard } from "src/components/ProjectCard";
 import { PATHS } from "src/routes";
 
 export const Projects = () => {
   return (
-    <section className="mt-16 px-8">
-      <H1 text="PROJECTS" subText="some things i built." />
+    <section id="projects" className="mt-16 px-8">
+      <SectionHeading text="PROJECTS" subText="some things i built." />
       <div className="mx-auto mt-8 grid max-w-5xl gap-8 md:grid-cols-3">
         <ProjectCard
           title="Subscription Portal"

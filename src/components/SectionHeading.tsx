@@ -1,11 +1,12 @@
 interface Props {
   text: string;
   subText?: string;
+  className?: string;
 }
 
-export const H1 = ({ text, subText }: Props) => {
+export const SectionHeading = ({ text, subText, className }: Props) => {
   return (
-    <>
+    <div className={className}>
       <h1 className="text-center text-32 font-bold">
         /
         <span className="animate-text bg-gradient-to-r from-tertiary via-secondary to-primary bg-clip-text text-center text-transparent">
@@ -16,6 +17,6 @@ export const H1 = ({ text, subText }: Props) => {
       {subText && (
         <p className="text-center text-18 text-tertiary">{subText}</p>
       )}
-    </>
+    </div>
   );
 };

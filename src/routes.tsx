@@ -1,6 +1,7 @@
 export const PATHS = {
   default: "/",
-  about: "#about",
+  conatiner: "#container",
+  overview: "#overview",
   projects: "#projects",
   library: "/library",
   comingSoon: "/coming-soon",

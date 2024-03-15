@@ -1,19 +1,34 @@
-import { Link } from "react-router-dom";
-import { Camera } from "./Camera";
 import { PATHS } from "src/routes";
+import { CarrotUp } from "../SVGs/CarrotUp";
+import { Github } from "../SVGs/Github";
+import { LinkedIn } from "../SVGs/LinkedIn";
 
 export const Footer = () => {
   return (
-    <section className="mx-8 mt-16 grid grid-cols-2 items-center py-8 md:grid-cols-3">
-      <div className="hidden md:block" />
-      <div className="text-left text-xs font-bold text-secondary sm:text-sm md:text-center">
-        <span>&copy; frankiemarie.me | twentytwentyfour</span>
+    <footer className="mt-24">
+      <a href={PATHS.conatiner}>
+        <CarrotUp />
+      </a>
+
+      <div className="bg-gradient-to-r from-tertiary via-secondary to-primary pt-1">
+        <section className="grid w-full grid-cols-2 items-center bg-background p-8">
+          <div className="animate-text bg-gradient-to-r from-tertiary via-secondary to-primary bg-clip-text text-left text-xs font-bold text-transparent sm:text-sm">
+            <span>frankiemarie.me &copy; twentytwentyfour</span>
+          </div>
+
+          <div className="flex justify-end gap-4">
+            <a href="https://github.com/FrankieMarie" target="_blank">
+              <Github />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/frankiedenell/"
+              target="_blank"
+            >
+              <LinkedIn />
+            </a>
+          </div>
+        </section>
       </div>
-      <nav className="flex justify-end">
-        <Link to={PATHS.library}>
-          <Camera />
-        </Link>
-      </nav>
-    </section>
+    </footer>
   );
 };
