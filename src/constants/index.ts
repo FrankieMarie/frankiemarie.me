@@ -1,3 +1,2 @@
-export { navLinks, technologies } from './content';
-export { defaultFloatProps } from './defaultFloatProps';
-export * from './types';
+export { defaultFloatProps } from "./defaultFloatProps";
+export * from "./types";
