@@ -3,14 +3,14 @@ import { Tag } from "./Tag";
 interface Props {
   title: string;
   text: string;
-  url: string;
   tags: string[];
+  onClick: () => void;
 }
 
-export const ProjectCard = ({ title, text, url, tags }: Props) => {
+export const ProjectCard = ({ title, text, tags, onClick }: Props) => {
   return (
     <div className="relative flex flex-col items-center justify-start rounded-xl bg-darkGrey bg-opacity-30 p-4 shadow-[rgba(255,211,211,_0.25)_0px_4px_16px] transition-all hover:shadow-[0_4px_16px_rgba(255,255,255,_0.55)]">
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <button type="button" onClick={onClick}>
         <h2 className="animate-text mb-2 bg-gradient-to-r from-tertiary via-secondary to-primary bg-clip-text text-center font-bold text-transparent">
           {title}
         </h2>
@@ -20,7 +20,7 @@ export const ProjectCard = ({ title, text, url, tags }: Props) => {
             <Tag key={`${title}-${tag}`} text={tag} />
           ))}
         </div>
-      </a>
+      </button>
     </div>
   );
 };
