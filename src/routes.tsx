@@ -5,4 +5,4 @@ export const PATHS = {
   projects: "#projects",
   library: "/library",
   comingSoon: "/coming-soon",
-};
+} as const;

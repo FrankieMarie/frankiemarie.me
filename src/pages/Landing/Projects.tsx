@@ -9,8 +9,8 @@ export const Projects = () => {
       <div className="mx-auto mt-8 grid max-w-5xl gap-8 md:grid-cols-3">
         <ProjectCard
           title="Subscription Portal"
-          url={PATHS.comingSoon}
-          text="Demo account portal for allowing a user to manage their plans for subscription services."
+          url={`https://frankiemarie.me${PATHS.comingSoon}`}
+          text="Account portal app for users to manage their subscription plans for ecommerce services."
           tags={["REACT", "TS", "TAILWIND", "VITE"]}
         />
         <ProjectCard
