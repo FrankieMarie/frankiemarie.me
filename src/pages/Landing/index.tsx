@@ -5,6 +5,7 @@ import { StarsCanvas } from "src/components/Canvas";
 import { Overview } from "./Overview";
 import { Projects } from "./Projects";
 import { useScroll } from "src/hooks/useScroll";
+import { Contact } from "./Contact";
 
 export const Landing = () => {
   const { scrolled, activeHash } = useScroll();
@@ -19,6 +20,7 @@ export const Landing = () => {
       <div className="bg-background bg-opacity-50">
         <Overview />
         <Projects />
+        <Contact />
         <Footer />
       </div>
     </div>

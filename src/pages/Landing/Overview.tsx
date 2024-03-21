@@ -2,7 +2,7 @@ import { SectionHeading } from "src/components/SectionHeading";
 
 export const Overview = () => {
   return (
-    <section id="overview" className="mx-auto mt-16 max-w-screen-content px-8">
+    <section id="overview" className="mx-auto mt-24 max-w-screen-content px-8">
       <SectionHeading text="OVERVIEW" subText="a bit about me." />
       <p className="mx-auto mt-4 max-w-5xl">
         I am a female in my 30's from the Upper Peninsula of Michigan. I am a

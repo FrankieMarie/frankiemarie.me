@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const Projects = () => {
   const nav = useNavigate();
   return (
-    <section id="projects" className="mt-16 px-8">
+    <section id="projects" className="mt-24 px-8">
       <SectionHeading text="PROJECTS" subText="some things i built." />
       <div className="mx-auto mt-8 grid max-w-5xl gap-8 md:grid-cols-3">
         <ProjectCard
