@@ -11,21 +11,23 @@ export const Footer = () => {
       </a>
 
       <div className="bg-gradient-to-r from-tertiary via-secondary to-primary pt-1">
-        <section className="grid w-full grid-cols-2 items-center bg-background p-8">
-          <div className="animate-text bg-gradient-to-r from-tertiary via-secondary to-primary bg-clip-text text-left text-xs font-bold text-transparent sm:text-sm">
-            <span>frankiemarie.me &copy; twentytwentyfour</span>
-          </div>
+        <section className="bg-background px-8">
+          <div className="mx-auto flex w-full max-w-screen-content items-center justify-between py-6">
+            <div className="animate-text bg-gradient-to-r from-tertiary via-secondary to-primary bg-clip-text text-left text-xs font-bold text-transparent sm:text-sm">
+              <span>frankiemarie.me &copy; twentytwentyfour</span>
+            </div>
 
-          <div className="flex justify-end gap-4">
-            <a href="https://github.com/FrankieMarie" target="_blank">
-              <Github />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/frankiedenell/"
-              target="_blank"
-            >
-              <LinkedIn />
-            </a>
+            <div className="flex justify-end gap-4">
+              <a href="https://github.com/FrankieMarie" target="_blank">
+                <Github />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/frankiedenell/"
+                target="_blank"
+              >
+                <LinkedIn />
+              </a>
+            </div>
           </div>
         </section>
       </div>

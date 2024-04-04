@@ -17,7 +17,6 @@ module.exports = {
         xs: '450px',
       },
       fontFamily: {
-        ubuntu: ['Ubuntu', 'sans-serif'],
         dank: ['Dank', 'monospace']
       },
       fontSize: {

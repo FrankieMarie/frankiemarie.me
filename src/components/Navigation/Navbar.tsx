@@ -11,7 +11,7 @@ export const Navbar = ({ scrolled, active }: Props) => {
   return (
     <nav
       className={`sticky top-0 z-20 mx-auto flex w-full items-center px-4 py-3 transition-all sm:px-8 ${
-        scrolled ? "bg-background bg-opacity-90" : "bg-transparent"
+        scrolled ? "backdrop-blur-sm" : "bg-transparent"
       } `}
     >
       <div className="mx-auto flex w-full max-w-screen-content items-center justify-between">
@@ -32,6 +32,14 @@ export const Navbar = ({ scrolled, active }: Props) => {
             href={PATHS.projects}
           >
             Projects
+          </a>
+          <a
+            className={`text-14 font-bold transition-all hover:text-primary sm:text-16 ${
+              active === PATHS.contact ? "text-primary" : "text-tertiary"
+            }`}
+            href={PATHS.contact}
+          >
+            Contact
           </a>
         </div>
       </div>

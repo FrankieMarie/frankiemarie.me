@@ -17,7 +17,9 @@ const Stars = () => {
 
   const [sphere] = useState(
     () =>
-      random.inSphere(new Float32Array(5000), { radius: 1.2 }) as Float32Array
+      random.inSphere(new Float32Array(1500), {
+        radius: 1.2,
+      }) as Float32Array
   );
 
   useFrame((_state, delta) => {
@@ -49,7 +51,6 @@ const StarsCanvas = () => {
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
-
         <Preload all />
       </Canvas>
     </div>
