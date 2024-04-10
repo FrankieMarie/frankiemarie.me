@@ -38,7 +38,7 @@ export const Projects = () => {
         <ProjectCard
           title="Component Library"
           onClick={() => nav(PATHS.comingSoon)}
-          text="I decided to build my own custom component library for components I use often in React Apps."
+          text="I decided to build my own library for components I often use in React Apps."
           tags={["REACT", "ARIA", "TS", "TAILWIND"]}
         />
         <ProjectCard
