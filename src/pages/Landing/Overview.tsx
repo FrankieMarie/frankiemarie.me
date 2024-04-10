@@ -8,12 +8,11 @@ export const Overview = () => {
       <SectionHeading text="OVERVIEW" subText="a bit about me." />
       <div className="mx-auto max-w-4xl">
         <p className="mx-auto mt-4 max-w-5xl">
-          I am a web developer from the Upper Peninsula of Michigan. I began
-          teaching myself HTML, CSS, and JavaScript in my teens. In my early
-          twenties, I took a software engineering bootcamp in Phoenix, AZ, and
-          landed my first developer role in Tempe, AZ shortly after. I
-          specialize in building full stack applications with a focus on front
-          end design, semantics, accessibility, and user experience.
+          I am a web developer from the Upper Peninsula of Michigan. I have over
+          10 years experience working with HTML, CSS, and JavaScript, and over 6
+          years professionally. I specialize in building full stack applications
+          with a focus on front end design, style, semantics, accessibility, and
+          user experience.
         </p>
 
         <p className="mx-auto mt-4 max-w-5xl">

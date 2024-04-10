@@ -17,7 +17,7 @@ const Stars = () => {
 
   const [sphere] = useState(
     () =>
-      random.inSphere(new Float32Array(1500), {
+      random.inSphere(new Float32Array(1000), {
         radius: 1.2,
       }) as Float32Array
   );

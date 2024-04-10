@@ -6,26 +6,27 @@ import { ScrollAnchor } from "src/components/ScrollAnchor";
 import { SectionHeading } from "src/components/SectionHeading";
 
 export const Contact = () => {
-  const { submit } = useSubmitContact();
+  const { mutateAsync } = useSubmitContact();
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const data = new FormData(e?.target as HTMLFormElement);
-    const payload = {
-      [NAME]: data.get(NAME),
-      [EMAIL]: data.get(EMAIL),
-      [SUBJECT]: data.get(SUBJECT),
-      [MESSAGE]: data.get(MESSAGE),
-    };
+  // const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   const data = new FormData(e?.target as HTMLFormElement);
+  //   const payload = {
+  //     [NAME]: data.get(NAME),
+  //     [EMAIL]: data.get(EMAIL),
+  //     [SUBJECT]: data.get(SUBJECT),
+  //     [MESSAGE]: data.get(MESSAGE),
+  //   };
 
-    submit(payload);
-  };
+  //   mutateAsync(payload);
+  // };
 
   return (
     <section className="mt-12 px-8 sm:mt-24">
       <ScrollAnchor id="contact" />
       <SectionHeading text="CONTACT" subText="lets build stuff." />
-      <ContactForm onSubmit={handleSubmit} />
+      <p className="mt-8 text-center">hello@frankiemarie.me</p>
+      {/* <ContactForm onSubmit={handleSubmit} /> */}
     </section>
   );
 };
