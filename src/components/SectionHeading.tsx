@@ -9,10 +9,10 @@ export const SectionHeading = ({ text, subText, className }: Props) => {
     <div className={className}>
       <h1 className="text-center text-32 font-bold">
         /
-        <span className="animate-text bg-gradient-to-r from-tertiary via-secondary to-primary bg-clip-text text-center text-transparent">
+        <span className="bg-gradient-to-r from-tertiary via-primary to-secondary bg-clip-text font-bold text-transparent">
           {text}
         </span>
-        <span className="text-primary">.</span>
+        <span className="text-secondary">.</span>
       </h1>
       {subText && (
         <p className="text-center text-18 text-tertiary">{subText}</p>

@@ -16,26 +16,26 @@ export const Navbar = ({ scrolled, active }: Props) => {
     >
       <div className="mx-auto flex w-full max-w-screen-content items-center justify-between">
         <Logo />
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-8">
           <a
-            className={`text-14 font-bold transition-all hover:text-primary sm:text-16 ${
-              active === PATHS.overview ? "text-primary" : "text-tertiary"
+            className={`text-14 font-bold transition-all hover:text-secondary ${
+              active === PATHS.overview ? "text-secondary" : "text-primary"
             }`}
             href={PATHS.overview}
           >
             Overview
           </a>
           <a
-            className={`text-14 font-bold transition-all hover:text-primary sm:text-16 ${
-              active === PATHS.projects ? "text-primary" : "text-tertiary"
+            className={`text-14 font-bold transition-all hover:text-secondary ${
+              active === PATHS.projects ? "text-secondary" : "text-primary"
             }`}
             href={PATHS.projects}
           >
             Projects
           </a>
           <a
-            className={`text-14 font-bold transition-all hover:text-primary sm:text-16 ${
-              active === PATHS.contact ? "text-primary" : "text-tertiary"
+            className={`text-14 font-bold transition-all hover:text-secondary ${
+              active === PATHS.contact ? "text-secondary" : "text-primary"
             }`}
             href={PATHS.contact}
           >

@@ -11,7 +11,7 @@ export const CarrotDown = ({ className }: Props) => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="mx-auto h-8 w-8 animate-bounce cursor-pointer stroke-secondary transition-all hover:stroke-primary"
+        className="mx-auto h-8 w-8 animate-bounce cursor-pointer stroke-primary transition-all hover:stroke-secondary"
       >
         <path
           strokeLinecap="round"

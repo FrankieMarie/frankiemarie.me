@@ -10,10 +10,10 @@ export const Footer = () => {
         <CarrotUp />
       </a>
 
-      <div className="bg-gradient-to-r from-tertiary via-secondary to-primary pt-1">
+      <div className="bg-gradient-to-r from-tertiary via-primary to-secondary pt-1">
         <section className="bg-background px-8">
           <div className="mx-auto flex w-full max-w-screen-content items-center justify-between py-6">
-            <div className="animate-text bg-gradient-to-r from-tertiary via-secondary to-primary bg-clip-text text-left text-xs font-bold text-transparent sm:text-sm">
+            <div className="text-xs font-bold text-tertiary sm:text-sm">
               <span>frankiemarie.me &copy; twentytwentyfour</span>
             </div>
 

@@ -1,7 +1,7 @@
 export const Github = () => {
   return (
     <svg
-      className="w-4 fill-secondary transition-all hover:scale-125 hover:fill-primary sm:w-5"
+      className="w-4 fill-primary transition-all hover:scale-110 hover:fill-secondary sm:w-5"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 496 512"
     >
