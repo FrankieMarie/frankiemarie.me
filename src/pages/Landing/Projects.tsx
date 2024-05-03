@@ -32,7 +32,7 @@ export const Projects = () => {
         />
       </div>
 
-      <div className="mx-auto h-[500px] max-w-5xl rounded-xl bg-bridge bg-cover bg-center bg-no-repeat opacity-75" />
+      <div className="mx-auto h-[300px] max-w-5xl rounded-xl bg-bridge bg-cover bg-center bg-no-repeat opacity-75 sm:h-[500px]" />
     </section>
   );
 };
