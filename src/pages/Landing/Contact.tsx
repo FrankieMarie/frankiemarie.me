@@ -22,7 +22,7 @@ export const Contact = () => {
   // };
 
   return (
-    <section className="mt-12 px-8 sm:mt-24">
+    <section className="mt-8 px-8 sm:mt-12">
       <ScrollAnchor id="contact" />
       <SectionHeading text="CONTACT" subText="lets build stuff." />
       <p className="mt-8 text-center">hello@frankiemarie.me</p>

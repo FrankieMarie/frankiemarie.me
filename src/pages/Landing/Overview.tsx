@@ -1,9 +1,11 @@
+import Bridge from "src/assets/bridge.jpg";
 import { ScrollAnchor } from "src/components/ScrollAnchor";
 import { SectionHeading } from "src/components/SectionHeading";
+import { Image } from "src/components/Image";
 
 export const Overview = () => {
   return (
-    <section id="overview" className="mt-12 px-8 sm:mt-24">
+    <section id="overview" className="mt-8 px-8 sm:mt-12">
       <ScrollAnchor id="overview" />
       <SectionHeading text="OVERVIEW" subText="a bit about me." />
       <div className="mx-auto max-w-5xl">

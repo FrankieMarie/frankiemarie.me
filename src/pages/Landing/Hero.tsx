@@ -10,8 +10,8 @@ interface Props {
 export const Hero = ({ scrolled }: Props) => {
   return (
     <>
-      <section className="mb-4 flex h-full w-full flex-col justify-between">
-        <div className="mx-auto flex h-3/4 w-full max-w-screen-content flex-col justify-center px-6 text-right sm:px-8">
+      <section className="flex h-full w-full flex-col justify-between">
+        <div className="mx-auto flex h-3/4 w-full max-w-5xl flex-col justify-center px-6 text-right sm:px-8">
           <h1 className="bg-gradient-to-r from-white via-tertiary to-secondary bg-clip-text text-28 font-bold text-transparent xs:text-[40px] sm:text-[60px] lg:text-[68px] ">
             Hi, I'm <span className="">Frankie</span>
           </h1>

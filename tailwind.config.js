@@ -4,7 +4,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   mode: "jit",
   theme: {
-    extend: {
+    extend: { 
+      backgroundImage: {
+        'bridge': "url('./src/assets/bridge.jpg')"
+      },
       colors: {
         primary: "#f4a4db",
         secondary: "#bc4b98",

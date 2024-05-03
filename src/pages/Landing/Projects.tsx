@@ -4,10 +4,10 @@ import { ScrollAnchor } from "src/components/ScrollAnchor";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="mt-12 px-8 sm:mt-24">
+    <section id="projects" className="mt-8 px-8 sm:mt-12">
       <ScrollAnchor id="projects" />
       <SectionHeading text="PROJECTS" subText="some things i built." />
-      <div className="mx-auto mt-8 grid max-w-5xl gap-4 md:grid-cols-3">
+      <div className="mx-auto mb-24 mt-8 grid max-w-5xl gap-4 md:grid-cols-3">
         <ProjectCard
           title="React Playground"
           onClick={() =>
@@ -31,6 +31,8 @@ export const Projects = () => {
           tags={["REACT", "THREEJS", "FRAMER"]}
         />
       </div>
+
+      <div className="mx-auto h-[500px] max-w-5xl rounded-xl bg-bridge bg-cover bg-center bg-no-repeat opacity-75" />
     </section>
   );
 };
