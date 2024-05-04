@@ -28,8 +28,8 @@ export const Hero = ({ scrolled }: Props) => {
         )}
       </section>
       <Image
-        className="absolute left-0 right-0 top-0 -z-10 mx-auto h-screen w-full max-w-[2560px] object-cover text-center opacity-45"
-        webp={hero}
+        className="absolute left-0 right-0 top-0 -z-10 mx-auto h-screen w-full max-w-[2560px] object-cover text-center opacity-40"
+        src={hero}
         fallback={hero}
         alt="Breaking Through the Firmament"
       />

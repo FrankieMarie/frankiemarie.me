@@ -1,6 +1,8 @@
 import { SectionHeading } from "src/components/SectionHeading";
 import { ProjectCard } from "src/components/ProjectCard";
 import { ScrollAnchor } from "src/components/ScrollAnchor";
+import { Image } from "src/components/Image";
+import bridge from "src/assets/bridge.jpg";
 
 export const Projects = () => {
   return (
@@ -14,7 +16,7 @@ export const Projects = () => {
             window.open("https://github.com/FrankieMarie/react-playground")
           }
           text="Full-stack app where I build things and play with tools I am interested in."
-          tags={["REACT", "ELYSIA", "VITE", "BUN"]}
+          tags={["REACT", "ELYSIA", "TAILWIND"]}
         />
         <ProjectCard
           title="The Rusty Spoke"
@@ -28,11 +30,13 @@ export const Projects = () => {
             window.open("https://github.com/FrankieMarie/frankiemarie.me")
           }
           text="My personal website portfolio. Constantly evolving, perpetually improving."
-          tags={["REACT", "THREEJS", "FRAMER"]}
+          tags={["REACT", "THREE", "FRAMER"]}
         />
       </div>
 
-      <div className="mx-auto h-[300px] max-w-5xl rounded-xl bg-bridge bg-cover bg-center bg-no-repeat opacity-75 sm:h-[500px]" />
+      <div className="mx-auto max-w-5xl opacity-80">
+        <Image src={bridge} fallback={bridge} />
+      </div>
     </section>
   );
 };
