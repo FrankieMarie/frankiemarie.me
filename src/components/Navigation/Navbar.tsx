@@ -52,8 +52,15 @@ export const Navbar = ({ scrolled, active }: Props) => {
               </a>
               <hr className="block h-[1px] border-t border-tertiary p-0" />
               <div className="flex cursor-pointer justify-center gap-4">
-                <Github />
-                <LinkedIn />
+                <a href="https://github.com/FrankieMarie" target="_blank">
+                  <Github />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/frankiedenell/"
+                  target="_blank"
+                >
+                  <LinkedIn />
+                </a>
               </div>
             </div>
           </PopoverContent>
