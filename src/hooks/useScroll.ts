@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { PATHS } from "src/routes";
+import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from '@tanstack/react-router';
 
 export const useScroll = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -17,14 +16,14 @@ export const useScroll = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
-    if (scrolled === false && location.hash !== "") {
-      nav(PATHS.default);
+    if (scrolled === false && location.hash !== '') {
+      nav({ to: '/' });
     }
   }, [scrolled]);
 
