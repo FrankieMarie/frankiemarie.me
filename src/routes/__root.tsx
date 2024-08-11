@@ -1,6 +1,7 @@
 import { createRootRoute, Outlet } from '@tanstack/react-router';
 import { Navbar } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { StarsCanvas } from '../components/Stars';
 
 export const Route = createRootRoute({
   component: Root
@@ -14,6 +15,7 @@ function Root() {
       </div>
       <hr />
       <div className="mx-auto w-full max-w-screen-content flex-grow p-8">
+        <StarsCanvas />
         <Outlet />
       </div>
       <Footer />
