@@ -1,39 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  mode: "jit",
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: { 
-      backgroundImage: {
-        'bridge': "url('./src/assets/bridge.jpg')"
-      },
+    extend: {
       colors: {
-        primary: "#f4a4db",
-        secondary: "#bc4b98",
-        tertiary: "#f7d2eb",
-        background: "#1a1a1a",
-        darkGrey: "#39494f",
+        gold: '#fcbf49',
+        darkest: '#212529',
+        darker: '#343a40',
+        dark: '#495057',
+        medium: '#6c757d',
+        light: '#adb5bd',
+        lighter: '#ced4da',
+        lightest: '#dee2e6'
       },
       screens: {
-        content: "1920px",
-        xs: "450px",
+        nav: '1920px',
+        content: '1366px',
+        xs: '450px'
       },
       fontFamily: {
-        dank: ["Dank", "monospace"],
+        dank: ['Dank', 'monospace']
       },
       fontSize: {
-        10: ".625rem",
-        12: ".75rem",
-        14: ".875rem",
-        16: "1rem",
-        18: "1.125rem",
-        22: "1.375rem",
-        24: "1.5rem",
-        28: "1.75rem",
-        32: "2rem",
-      },
-    },
+        10: '.625rem',
+        12: '.75rem',
+        14: '.875rem',
+        16: '1rem',
+        18: '1.125rem',
+        22: '1.375rem',
+        24: '1.5rem',
+        28: '1.75rem',
+        32: '2rem'
+      }
+    }
   },
-  plugins: [require("prettier-plugin-tailwindcss")],
+  plugins: ['prettier-plugin-tailwindcss']
 };

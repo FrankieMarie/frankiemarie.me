@@ -1,17 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link } from '@tanstack/react-router';
 
 export const Logo = () => {
   return (
-    <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-      <p className="flex cursor-pointer items-baseline text-[20px] font-normal text-white">
-        <span className="text-14 font-bold text-primary transition-all hover:text-secondary sm:text-16 md:text-18">
-          FM
-        </span>
-        <span className="px-2 text-white">|</span>
-        <span className="text-14 font-bold text-white sm:text-16 md:text-18">
-          Web Dev
-        </span>
-      </p>
+    <Link
+      className="flex cursor-pointer items-baseline"
+      to="/"
+      onClick={() => window.scrollTo(0, 0)}
+    >
+      <span className="font-bold text-gold">FM</span>
+      <span className="font-normal">Web Dev</span>
     </Link>
   );
 };
