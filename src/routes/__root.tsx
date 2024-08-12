@@ -9,10 +9,10 @@ export const Route = createRootRoute({
 
 function Root() {
   return (
-    <main className="flex h-full flex-col bg-darkest text-lightest selection:bg-gold selection:text-darkest">
+    <main className="relative bg-darkest text-lightest selection:bg-gold selection:text-darkest">
       <StarsCanvas />
       <Navbar />
-      <div className="z-10 mx-auto h-full w-full max-w-screen-content flex-grow p-8">
+      <div className="relative z-10 mx-auto w-full max-w-screen-content px-8">
         <Outlet />
       </div>
       <Footer />

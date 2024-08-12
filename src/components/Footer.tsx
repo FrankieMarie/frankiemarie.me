@@ -3,8 +3,8 @@ import { LinkedIn } from '../assets/SVGs/LinkedIn';
 
 export const Footer = () => {
   return (
-    <footer className="z-10">
-      <div className="mx-auto flex w-full max-w-screen-nav items-center justify-between p-8">
+    <footer className="relative z-10 mt-24">
+      <div className="mx-auto flex h-24 w-full max-w-screen-nav items-center justify-between px-8">
         <div className="flex gap-2 text-14">
           <div className="flex items-baseline">
             <span className="font-bold text-gold">FM</span>

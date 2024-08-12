@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-40 mx-auto flex w-full items-center border-none p-8 transition-all ${
+      className={`sticky top-0 z-40 mx-auto flex h-24 w-full items-center border-none px-8 transition-all ${
         scrolled ? 'backdrop-blur-sm' : 'bg-transparent'
       } `}
     >

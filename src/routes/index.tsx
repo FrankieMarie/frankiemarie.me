@@ -1,6 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { About } from '../components/About';
 import { Projects } from '../components/Projects';
+import { Images } from '../components/Images';
+import { Contact } from '../components/Contact';
 
 export const Route = createFileRoute('/')({
   component: Index
@@ -8,9 +10,14 @@ export const Route = createFileRoute('/')({
 
 function Index() {
   return (
-    <div className="flex h-full flex-col">
-      <About />
+    <>
+      {/* height === 100vh - navbar height */}
+      <div className="flex h-[calc(100vh-6rem)] flex-col">
+        <About />
+        <Images />
+      </div>
       <Projects />
-    </div>
+      <Contact />
+    </>
   );
 }
