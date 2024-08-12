@@ -1,4 +1,4 @@
-import { useState, useRef, Suspense } from 'react';
+import { useState, useRef, memo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
 import { random } from 'maath';
@@ -15,12 +15,12 @@ const Stars = () => {
     Material | Material[]
   > | null>(null);
 
-  const [sphere] = useState(
-    () =>
-      random.inSphere(new Float32Array(500), {
-        radius: 1.2
-      }) as Float32Array
-  );
+  const generateStars = () =>
+    random.inSphere(new Float32Array(500), {
+      radius: 1.2
+    }) as Float32Array;
+
+  const [sphere] = useState(generateStars);
 
   useFrame((_state, delta) => {
     if (ref.current != null) {
@@ -44,17 +44,15 @@ const Stars = () => {
   );
 };
 
-const StarsCanvas = () => {
+const StarsCanvas = memo(() => {
   return (
     <div className="absolute inset-0 w-full">
       <Canvas camera={{ position: [0, 0, 1] }}>
-        <Suspense fallback={null}>
-          <Stars />
-        </Suspense>
+        <Stars />
         <Preload all />
       </Canvas>
     </div>
   );
-};
+});
 
 export { StarsCanvas };

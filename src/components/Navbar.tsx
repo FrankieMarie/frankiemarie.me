@@ -1,12 +1,13 @@
-import { AnimatedBackground } from '../AnimatedBackground';
+import { AnimatedBackground } from './AnimatedBackground';
 import { Link } from '@tanstack/react-router';
-import { Github } from '../../assets/SVGs/Github';
-import { LinkedIn } from '../../assets/SVGs/LinkedIn';
+import { Github } from '../assets/SVGs/Github';
+import { LinkedIn } from '../assets/SVGs/LinkedIn';
 import { Logo } from './Logo';
-import { useScroll } from '../../hooks/useScroll';
+import { useScroll } from '../hooks/useScroll';
 
-export const Navbar = () => {
+function Navbar() {
   const { scrolled } = useScroll();
+
   return (
     <nav
       className={`sticky top-0 z-40 mx-auto flex w-full items-center border-none p-8 transition-all ${
@@ -48,4 +49,6 @@ export const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
+
+export { Navbar };

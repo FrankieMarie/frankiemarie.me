@@ -1,5 +1,5 @@
 import { createRootRoute, Outlet } from '@tanstack/react-router';
-import { Navbar } from '../components/Navigation';
+import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { StarsCanvas } from '../components/Stars';
 
@@ -9,13 +9,10 @@ export const Route = createRootRoute({
 
 function Root() {
   return (
-    <main className="flex h-full flex-col bg-darkest text-lightest">
-      <div className="flex gap-2 p-2">
-        <Navbar />
-      </div>
-      <hr />
-      <div className="mx-auto w-full max-w-screen-content flex-grow p-8">
-        <StarsCanvas />
+    <main className="flex h-full flex-col bg-darkest text-lightest selection:bg-gold selection:text-darkest">
+      <StarsCanvas />
+      <Navbar />
+      <div className="z-10 mx-auto h-full w-full max-w-screen-content flex-grow p-8">
         <Outlet />
       </div>
       <Footer />

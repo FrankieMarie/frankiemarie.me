@@ -1,5 +1,5 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { ReactNode } from "react";
+import { AnimatePresence, motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
 interface Props {
   showModal: boolean;
@@ -9,22 +9,22 @@ interface Props {
 
 const backdropVariants = {
   visible: { opacity: 1 },
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0 }
 };
 
 const modalVariants = {
   hidden: {
-    y: "-100vh",
-    opacity: 0,
+    y: '-100vh',
+    opacity: 0
   },
   visible: {
     y: 1,
     opacity: 1,
-    transition: { delay: 0.25 },
-  },
+    transition: { delay: 0.25 }
+  }
 };
 
-export const Modal = (props: Props) => {
+function Modal(props: Props) {
   const { showModal, children, onClose } = props;
 
   return (
@@ -48,4 +48,6 @@ export const Modal = (props: Props) => {
       )}
     </AnimatePresence>
   );
-};
+}
+
+export { Modal };

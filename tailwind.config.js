@@ -10,13 +10,13 @@ module.exports = {
         darker: '#343a40',
         dark: '#495057',
         medium: '#6c757d',
-        light: '#adb5bd',
+        light: '#a1a1aa',
         lighter: '#ced4da',
         lightest: '#dee2e6'
       },
       screens: {
         nav: '1920px',
-        content: '1366px',
+        content: '1280px',
         xs: '450px'
       },
       fontFamily: {
@@ -31,7 +31,9 @@ module.exports = {
         22: '1.375rem',
         24: '1.5rem',
         28: '1.75rem',
-        32: '2rem'
+        32: '2rem',
+        64: '4rem',
+        80: '5rem'
       }
     }
   },

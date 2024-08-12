@@ -3,7 +3,7 @@ import { LinkedIn } from '../assets/SVGs/LinkedIn';
 
 export const Footer = () => {
   return (
-    <footer className="mt-24">
+    <footer className="z-10">
       <div className="mx-auto flex w-full max-w-screen-nav items-center justify-between p-8">
         <div className="flex gap-2 text-14">
           <div className="flex items-baseline">
